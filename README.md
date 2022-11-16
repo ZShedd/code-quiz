@@ -15,4 +15,4 @@ THEN I can save my initials and highscore
 
 https://zshedd.github.io/code-quiz/
 
-![image](https://user-images.githubusercontent.com/116223460/202264632-3cc6fa89-5cdf-46d2-b194-6593bdc4bf1a.png)
+![image](https://user-images.githubusercontent.com/116223460/202267043-afbfbbcc-50d3-480e-8d85-92c81dd75de7.png)
