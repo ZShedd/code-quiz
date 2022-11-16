@@ -1,4 +1,5 @@
 //Logic for page.artBtn
+//Variables
 var currentQuestionIndex = 0;
 var time = questions.length * 15;
 var timerId;
@@ -9,12 +10,12 @@ var submitBtn = document.getElementById('submit');
 var startBtn = document.getElementById('start');
 var initialsEl = document.getElementById('initials');
 var resultsEl = document.getElementById('results');
-
+//logic functions
 function startQuiz() {
   var startScreenEl = document.getElementById('start-screen');
   startScreenEl.setAttribute('class', 'hidden');
 
-  questionsEl.removeAttribute('class');
+  questionsEl.removeAttribute('class', 'hidden');
 
   timerId = setInterval(clockTick, 1000);
 
@@ -85,7 +86,7 @@ function quizEnd() {
   finalScoreEl.textContent = time;
 
 
-  questionsEl.setAttribute('class', 'hide');
+  questionsEl.setAttribute('class', 'hidden');
 }
 
 function clockTick() {
