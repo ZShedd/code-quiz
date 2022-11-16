@@ -12,7 +12,7 @@ var resultsEl = document.getElementById('results');
 
 function startQuiz() {
   var startScreenEl = document.getElementById('start-screen');
-  startScreenEl.setAttribute('class', 'hide');
+  startScreenEl.setAttribute('class', 'hidden');
 
   questionsEl.removeAttribute('class');
 
@@ -64,7 +64,7 @@ function questionClick(event) {
 
   resultsEl.setAttribute('class', 'results');
   setTimeout(function () {
-    resultsEl.setAttribute('class', 'results hide');
+    resultsEl.setAttribute('class', 'results hidden');
   }, 1000);
 
   currentQuestionIndex++;
@@ -120,11 +120,11 @@ function checkForEnter(event) {
   }
 }
 
-submitBtn.onclick = saveHighscore;
+submitBtn.click = saveHighscore;
 
-startBtn.onclick = startQuiz;
+startBtn.click = startQuiz;
 
-choicesEl.onclick = questionClick;
+choicesEl.click = questionClick;
 
 initialsEl.onkeyup = checkForEnter;
 
