@@ -1,4 +1,4 @@
-//Logic for page.
+//Logic for page.artBtn
 var currentQuestionIndex = 0;
 var time = questions.length * 15;
 var timerId;
@@ -8,7 +8,7 @@ var choicesEl = document.getElementById('choices');
 var submitBtn = document.getElementById('submit');
 var startBtn = document.getElementById('start');
 var initialsEl = document.getElementById('initials');
-var feedbackEl = document.getElementById('feedback');
+var resultsEl = document.getElementById('results');
 
 function startQuiz() {
   var startScreenEl = document.getElementById('start-screen');
@@ -56,15 +56,15 @@ function questionClick(event) {
     if (time < 0) {
       time = 0;
     }
-
+  }
     timerEl.textContent = time;
 
-    feedbackEl.textContent = 'Wrong!';
-     feedbackEl.textContent = 'Correct!';
+    resultsEl.textContent = 'Wrong!';
+    resultsEl.textContent = 'Correct!';
 
-  feedbackEl.setAttribute('class', 'feedback');
+  resultsEl.setAttribute('class', 'results');
   setTimeout(function () {
-    feedbackEl.setAttribute('class', 'feedback hide');
+    resultsEl.setAttribute('class', 'results hide');
   }, 1000);
 
   currentQuestionIndex++;
