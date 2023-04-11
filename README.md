@@ -1,18 +1,15 @@
 # code-quiz
 
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0 seconds
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and highscore
+## Description 
+Would you like to step up and test your coding knowledge?<br>
+Step right up here and use this app!<br>
+This webapp is built utilizing CSS, JavaScript, and HTML.
 
+## Installation 
+No Installation required, just click the link in Usage.
+
+## Usage 
 
 https://zshedd.github.io/code-quiz/
 
-![image](https://user-images.githubusercontent.com/116223460/202267043-afbfbbcc-50d3-480e-8d85-92c81dd75de7.png)
+![image](https://user-images.githubusercontent.com/116223460/231221097-980a7927-fa57-46d7-bc5a-4989f1b5ead6.png)
