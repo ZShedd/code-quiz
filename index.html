@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Coding Quiz</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Quizzical Balderdash</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-item"><a href=#high-scores>View high scores</a></nav>
+        <div id="intro">
+            <h1>Coding Quiz Challenge</h1>
+            <p class="intro-description">Ready to rumble? Try to answer the following
+                code-related questions. Answer a question incorrectly, and you'll lose 10 seconds from the clock! Good luck!</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+    </header>
+    <main id="quiz">
+        <h2 id="countdown"></h2>
+        <!-- questions -->
+        <section id="quiz-questions">
+            <div class="question-column">
+                <figure class="card code-card">
+                    <h2 id="question-title" class="card-header">Question Title</h2>
+                    <div class="question">
+                        <div>
+                            <input type="radio" class="answer" name="answer" value="optionA">
+                            <label for="answer" id="optionA">Test Answer 1</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="answer" name="answer" value="optionB">
+                            <label for="answer" id="optionB">Test Answer 2</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="answer" name="answer" value="optionC">
+                            <label for="answer" id="optionC">Test Answer 3</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="answer" name="answer" value="optionD">
+                            <label for="answer" id="optionD">Test Answer 4</label>
+                        </div>
+                    </div>
+                    <div id="question-results">
 
-    <link rel="stylesheet" href="./assets/styles.css" />
-  </head>
+                    </div>
+                </figure>
+            </div>
+            <div>
+                <button id="submit-question" onclick=submitQuestion>Continue</button>
+            </div>
+        </section>
+        <div class="final">
+            <h1>All done!</h1>
+            <p id="final-score">Congratulations! Your final score is: </p>
+            <p>Input your name to save your high score!</p>
+            <input type="text" id="user-name">
+            <div>
+                <button id="submit-score" onclick=submitScore>Continue</button>
+            </div>
 
-  <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
-
-    <div class="clock">Time: <span id="time">0</span></div>
-
-    <div class="maintext">
-      <div id="start-screen" class="main">
-        <h1>Coding Quiz Challenge</h1>
-        <p>
-          Try to answer the following code-related questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          score/time by 15 seconds!
-        </p>
-        <button id="start">Start Quiz</button>
-      </div>
-      <div id="questions" class="hidden">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
-      </div>
-
-      <div id="end-screen" class="hidden">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
-        <p>
-          Enter initials: <input type="text" id="initials" max="3" />
-          <button id="submit">Submit</button>
-        </p>
-      </div>
-
-      <div id="results" class="results hidden"></div>
-    </div>
-
-    <script src="./assets/script.js"></script>
-  </body>
+        </div>
+        <div id="high-scores">
+            <h1>High Scores</h1>
+            <ul id="high-scores-list">
+            </ul>
+    </main>
+    <script src="./assets/script.js"></script> 
+</body>
 </html>
